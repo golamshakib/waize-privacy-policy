@@ -1,12 +1,11 @@
 {
-  "name": "nouvi-privacy-policy",
+  "name": "waize-privacy-policy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "next dev --turbopack --port 3001",
+    "build": "next build --turbopack ",
+    "start": "next start --port 3001"
   },
   "dependencies": {
     "react": "19.2.0",

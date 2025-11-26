@@ -2,6 +2,8 @@
 import React from "react";
 
 export default function PrivacyPolicyPage() {
+  const lastUpdatedDate = new Date().toLocaleDateString(); // Gets today's date
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-5xl">
@@ -12,8 +14,8 @@ export default function PrivacyPolicyPage() {
           </h1>
           <p className="text-slate-600 text-sm">
             Last Updated:{" "}
-            <time dateTime="2025-10-25" className="font-medium">
-              October 25, 2025
+            <time dateTime={lastUpdatedDate} className="font-medium">
+              {lastUpdatedDate}
             </time>
           </p>
           <div className="mt-4 w-24 h-1 bg-indigo-500 rounded-full " />
@@ -28,295 +30,135 @@ export default function PrivacyPolicyPage() {
                 1. Introduction
               </h2>
               <p>
-                Welcome to <strong>Nouvi</strong> (“we,” “us,” “our,” or
-                “Company”). We are committed to protecting your privacy and
-                ensuring you have a positive experience on our platform. This
-                Privacy Policy explains how we collect, use, disclose, and
-                safeguard your information when you visit our app and use our
-                services.
+                These General Terms and Conditions ("GTC") govern the use of the Waïzé mobile application, an advertisement platform available in Gabon.
               </p>
               <p>
-                Please read this Privacy Policy carefully. If you do not agree
-                with our policies and practices, please do not use our Services
+                For any questions or complaints, please contact us at: <strong>waize@tech-center.com</strong>
+              </p>
+              <p>
+                By accessing the application, you willingly accept these GTC. If you disagree with any part of the provisions, please do not use the application.
               </p>
             </div>
 
             {/* Section 2 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                2. Information We Collect
+                2. Definitions
               </h2>
-              <h3 className="text-lg font-semibold text-indigo-600 mt-4 mb-2">
-                2.1 Information You Provide Directly
-              </h3>
               <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Account Registration:</strong> Name, email, password,
-                  profile picture, and business information (for service
-                  providers).
-                </li>
-                <li>
-                  <strong>Profile Information:</strong> Service categories,
-                  pricing, availability, and location details.
-                </li>
-                <li>
-                  <strong>Booking Information:</strong> Service dates, times,
-                  locations, special requests, and booking preferences.
-                </li>
-                <li>
-                  <strong>Payment Information:</strong> Billing address, payment
-                  method details (processed securely through Stripe).
-                </li>
-                <li>
-                  <strong>Communication:</strong> Messages, reviews, ratings,
-                  feedback, and support inquiries
-                </li>
-                <li>
-                  <strong>Verification Documents:</strong> ID verification,
-                  business licenses, and certifications (for service providers).
-                </li>
-              </ul>
-
-              <h3 className="text-lg font-semibold text-indigo-600 mt-6 mb-2">
-                2.2 Information Collected Automatically
-              </h3>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Location Data:</strong> GPS coordinates and location
-                  information to help you find nearby service providers.
-                </li>
-                <li>
-                  <strong>Cookies:</strong> Session cookies and persistent
-                  cookies to enhance your experience.
-                </li>
+                <li><strong>Application:</strong> Waïzé, the mobile advertisement platform.</li>
+                <li><strong>User:</strong> Anyone accessing the application, whether registered or not.</li>
+                <li><strong>Seller:</strong> A user posting an advertisement to sell a product or service.</li>
+                <li><strong>Buyer:</strong> A user consulting or responding to an advertisement.</li>
+                <li><strong>Account:</strong> A personal profile created to manage ads and interactions.</li>
+                <li><strong>Advertisement:</strong> Content posted by a user (text, images, videos, etc.) related to a product or service.</li>
+                <li><strong>Content:</strong> All the information, data, and media posted by users.</li>
               </ul>
             </div>
 
             {/* Section 3 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                3. How We Use Your Information
+                3. Access and Registration
               </h2>
-              <p>
-                We use the information we collect for the following purposes:
-              </p>
               <ul className="list-disc list-inside space-y-1">
-                <li>To create and maintain your account</li>
-                <li>To process bookings and payments securely</li>
-                <li>To provide customer support and respond to inquiries</li>
-                <li>
-                  To send booking confirmations, reminders, and notifications
-                </li>
-                <li>
-                  To display relevant service providers based on your location
-                  and preferences
-                </li>
-                <li>
-                  To facilitate reviews and ratings for trust and credibility
-                </li>
-                <li>To prevent fraud and enhance platform security</li>
-                <li>To improve our services and user experience</li>
-                <li>To comply with legal obligations and regulations</li>
-                <li>To send service updates and important announcements</li>
+                <li>Access to the application is free via compatible smartphones.</li>
+                <li>Registration is mandatory to post or respond to an advertisement.</li>
+                <li>The user agrees to provide accurate and up-to-date information.</li>
+                <li>Only one account is allowed per individual or entity, unless prior authorization is given.</li>
               </ul>
             </div>
 
             {/* Section 4 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                4. Data Sharing & Third Parties
+                4. Use of Service
               </h2>
-              <p className="text-indigo-700 font-medium">
-                🔒 Your Privacy is Our Priority
-              </p>
-              <p>
-                <strong>
-                  {" "}
-                  We do NOT sell or share your personal data with third parties
-                  for marketing.{" "}
-                </strong>{" "}
-                Your information remains confidential and is used solely to
-                provide and improve our services.
-              </p>
-
-              <h3 className="text-lg font-semibold text-indigo-600 mt-4 mb-2">
-                4.1 Limited Exceptions
-              </h3>
-              <p className="mb-1">
-                We may share information only in the following limited
-                circumstances:
-              </p>
               <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Service Providers:</strong> With Stripe for secure
-                  payment processing (subject to their privacy policies)
+                <li>Advertisements must be clear, legal, and related to products or services available in Gabon.</li>
+                <li>It is strictly prohibited to post:
+                  <ul className="list-inside space-y-1">
+                    <li>Discriminatory, violent, or offensive content.</li>
+                    <li>False or misleading advertisements.</li>
+                    <li>Content infringing on the rights of a third party (photos, trademarks, etc.).</li>
+                  </ul>
                 </li>
-                <li>
-                  <strong>Legal Requirements:</strong> When required by law,
-                  court order, or government request
-                </li>
-                <li>
-                  <strong>Platform Functionality:</strong> Service provider
-                  information (name, rating, availability) is shared with
-                  customers to facilitate bookings
-                </li>
-                <li>
-                  <strong>Business Transfers:</strong> In case of merger,
-                  acquisition, or sale of assets (with notice to you)
-                </li>
+                <li>Each advertisement must relate to a unique product or service.</li>
+                <li>Interactions between users must remain respectful and free of harassment.</li>
               </ul>
             </div>
 
             {/* Section 5 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                5. Payment Security
+                5. Role and Responsibility of Waïzé
               </h2>
-              <p>
-                All payment transactions are processed securely through Stripe,
-                a PCI-DSS compliant payment processor. We do not store your
-                complete credit card information on our servers. Your payment
-                details are encrypted and handled according to industry
-                standards.
-              </p>
-              <p>
-                For more information about Stripe&apos;s privacy practices,
-                please visit their privacy policy at{" "}
-                <a
-                  href="https://stripe.com/privacy"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-indigo-600 underline"
-                >
-                  stripe.com/privacy
-                </a>
-                .
-              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Waïzé acts as an intermediary between users.</li>
+                <li>The platform does not guarantee the truthfulness of the advertisements or the quality of the products offered.</li>
+                <li>In case of a dispute between users, Waïzé's responsibility will not be engaged.</li>
+                <li>Each user is solely responsible for their advertisements and transactions.</li>
+              </ul>
             </div>
 
             {/* Section 6 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                6. Data Security
+                6. Moderation and Sanctions
               </h2>
-              <p>
-                We implement comprehensive security measures to protect your
-                personal information, including:
-              </p>
               <ul className="list-disc list-inside space-y-1">
-                <li>SSL/TLS encryption for data in transit</li>
-                <li>Secure password hashing and storage</li>
-                <li>Regular security audits</li>
-                <li>Access controls & authentication</li>
-                <li>Firewalls and intrusion detection</li>
+                <li>Waïzé reserves the right to remove any advertisement that does not comply with the GTC.</li>
+                <li>Suspend or delete a user account in the case of repeated or severe non-compliance.</li>
+                <li>Temporarily block access to certain features in the event of a report.</li>
+                <li>No compensation will be provided for the deletion of a user account or content.</li>
               </ul>
-              <p>
-                However, no method of transmission over the internet is 100%
-                secure. While we strive to protect your information, we cannot
-                guarantee absolute security.
-              </p>
             </div>
 
             {/* Section 7 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                7. Your Privacy Rights
+                7. Personal Data
               </h2>
-              <p>You have the right to:</p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Access : Request a copy of your data.</li>
-                <li>Correction : Update inaccurate information.</li>
-                <li>Deletion : Request account removal.</li>
-                <li>Opt-Out : Unsubscribe from marketing.</li>
-                <li>
-                  Data Portability : Request your data in a portable format.
-                </li>
-              </ul>
               <p>
-                To exercise these rights, please contact us at{" "}
-                <a
-                  href="mailto:mainadmin@nouvi.org"
-                  className="text-indigo-600 underline"
-                >
-                  mainadmin@nouvi.org
-                </a>
-                .
+                Waïzé collects data (email address, phone number, location, etc.) necessary for providing the service. This data is used for technical, commercial, or security purposes, in compliance with Gabonese law.
+              </p>
+              <p>
+                The user may request access, correction, or deletion of their data by writing to: <strong>waize@tech-center.com</strong>
               </p>
             </div>
 
             {/* Section 8 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                8. Data Retention
+                8. Data Sharing & Third Parties
               </h2>
-              <p>
-                We retain your personal information for as long as necessary to
-                provide our services and fulfill the purposes outlined in this
-                policy. You can request deletion of your account at any time,
-                and we will remove your data within 30 days, except where
-                retention is required by law.
+              <p className="text-indigo-700 font-medium">
+                🔒 Your Privacy is Our Priority
               </p>
+              <p>
+                We do NOT sell or share your personal data with third parties for marketing or any other purposes.
+              </p>
+              <h3 className="text-lg font-semibold text-indigo-600 mt-4 mb-2">
+                8.1 Limited Exceptions
+              </h3>
+              <ul className="list-disc list-inside space-y-1">
+                <li><strong>Legal Requirements:</strong> If required by law, court order, or government request.</li>
+              </ul>
             </div>
 
             {/* Section 9 */}
             <div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                9. Changes to This Policy
+                9. Contact Us
               </h2>
-              <p>
-                We may update this Privacy Policy from time to time to reflect
-                changes in our practices or for other operational, legal, or
-                regulatory reasons. We will notify you of any material changes
-                by posting the updated policy on our app and updating the
-                &quot;Last Updated&quot; date. Your continued use of our
-                services constitutes your acceptance of the updated policy.
-              </p>
-            </div>
-
-            {/* Section 10 */}
-            <div>
-              <h2 className="text-2xl font-semibold text-slate-900 mb-3">
-                10. Contact Us
-              </h2>
-              <p>
-                If you have questions about this Privacy Policy or our privacy
-                practices, please contact us:
-              </p>
+              <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
               <ul className="list-disc list-inside">
-                <li>
-                  Email:{" "}
-                  <a
-                    href="mailto:mainadmin@nouvi.org"
-                    className="text-indigo-600 underline"
-                  >
-                    mainadmin@nouvi.org
-                  </a>
-                </li>
-                <li>
-                  Phone:{" "}
-                  <a
-                    href="tel:+15619083713"
-                    className="text-indigo-600 underline"
-                  >
-                    +1 561 908 3713
-                  </a>
-                </li>
-                <li>
-                  Website:{" "}
-                  <a
-                    href="https://www.nouvi.org"
-                    className="text-indigo-600 underline"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    nouvi.org
-                  </a>
-                </li>
+                <li>Email: <strong>waize@tech-center.com</strong></li>
               </ul>
             </div>
 
             <div className="border-t border-slate-200 pt-6 text-sm text-slate-500">
-              <p>© 2025 Nouvi. All rights reserved.</p>
+              <p>© 2025 Waïzé. All rights reserved.</p>
             </div>
           </section>
         </div>
