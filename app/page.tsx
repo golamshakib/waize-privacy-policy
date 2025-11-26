@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image"; // Import Image from Next.js for optimized image loading
 
 export default function PrivacyPolicyPage() {
   const lastUpdatedDate = new Date().toLocaleDateString(); // Gets today's date
@@ -8,17 +9,27 @@ export default function PrivacyPolicyPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
-        <header className="text-left mb-6">
-          <h1 className="text-4xl font-bold text-slate-900 tracking-tight mb-3">
-            Privacy Policy
-          </h1>
-          <p className="text-slate-600 text-sm">
-            Last Updated:{" "}
-            <time dateTime={lastUpdatedDate} className="font-medium">
-              {lastUpdatedDate}
-            </time>
-          </p>
-          <div className="mt-4 w-24 h-1 bg-indigo-500 rounded-full " />
+        <header className="text-left mb-6 flex justify-between items-center">
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-bold text-slate-900 tracking-tight mb-3">
+              Privacy Policy
+            </h1>
+            <p className="text-slate-600 text-sm">
+              Last Updated:{" "}
+              <time dateTime={lastUpdatedDate} className="font-medium">
+                {lastUpdatedDate}
+              </time>
+            </p>
+          </div>
+          {/* Logo */}
+          <div className="ml-4">
+            <Image
+              src="/logo.png" // Assuming your logo is in the public folder
+              alt="Waïzé Logo"
+              width={100} // Adjust the width as needed
+              height={100} // Adjust the height as needed
+            />
+          </div>
         </header>
 
         {/* Content Card */}
