@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f0197e-d08f-4cf1-b7ae-f0e9d606d8ae" name="Changes" comment="" />
+    <list default="true" id="45f0197e-d08f-4cf1-b7ae-f0e9d606d8ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,11 +82,19 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/shakib/Documents/SHAKIB/Published App/Waize/privacy-policy/waize-privacy-policy",
+    "last_opened_file_path": "/Users/shakib/Documents/SHAKIB/Published App/Waize/privacy-policy/waize-privacy-policy/app",
     "settings.editor.selected.configurable": "emulator",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
